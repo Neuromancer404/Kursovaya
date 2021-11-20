@@ -1,19 +1,17 @@
-var WIDTH = window.innerWidth;
-var HEIGHT = window.innerHeight;
+let canvasHeigth = 400 + 'px';
+let canvasWidth = 400 + 'px';
 
-var renderer = new THREE.WebGLRenderer({antialias:true});
-renderer.setSize(WIDTH, HEIGHT);
-renderer.setClearColor(0xDDDDDD, 1);
-document.body.appendChild(renderer.domElement);
+function main() {
+	const canvas = document.querySelector('canvasGL');
+	
+	canvas.height = canvasHeigth;
+	canvas.width = canvasWidth;
 
-var scene = new THREE.Scene();
-
-var camera = new THREE.PerspectiveCamera(70, WIDTH/HEIGHT);
-camera.position.z = 50;
-scene.add(camera);
-
-function render() {
-	requestAnimationFrame(render);
-	renderer.render(scene, camera);
+	const renderer = new THREE.WebGLRenderer({canvas});
 }
-render();
+
+const fov = 75;
+const aspect = 2;  // значение для canvas по умолчанию
+const near = 0.1;
+const far = 5;
+const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
