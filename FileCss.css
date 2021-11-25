@@ -1,0 +1,39 @@
+
+body {
+  background-color: #202020;
+}
+
+.editor_topnav {
+    background-color: #333;
+    overflow: hidden;
+
+}
+
+/* Стиль ссылок внутри панели навигации */
+.editor_topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Изменение цвета ссылок при наведении курсора */
+.editor_topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+/* Добавить цвет для активной/текущей ссылки */
+.editor_topnav a:focus {
+  background-color: #2f4f4f;
+  color: white;
+}
+
+/* Выровненный по правому краю раздел внутри верхней навигации */
+.editor_topnav_right {
+  float: right;
+}
