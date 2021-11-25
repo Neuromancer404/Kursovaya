@@ -17,7 +17,7 @@ function main() {
   controls.update();
 
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color('blue');
+  scene.background = new THREE.Color(0x8491A3);
 
   function resizeRendererToDisplaySize(renderer) {
     const canvas = renderer.domElement;
