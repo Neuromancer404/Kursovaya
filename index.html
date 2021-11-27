@@ -2,14 +2,29 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Geetech 3D</title>
-	<style>
-		body { margin: 0; padding: 0; }
-		canvas { width: 100%; height: 100%; }
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Geetech3D</title>
+	<link rel="stylesheet" type="text/css" href="FileCss.css">
 </head>
 <body>
+<div class="editor">
+	<nav class="editor_topnav">
+				<div class="editor_topnav_left">
+					<a href="#home">Редактор</a>
+  					<a href="#import">Импорт</a>
+  					<a href="#export">Экспорт</a>
+  					<a href="#otprav">Отправить</a>
+  					<a href="#clean">Очистить</a>
+  					<div class="editor_topnav_right">
+    					<a href="#contact">Контакты</a>
+    					<a href="#about">О Нас</a>
+  					</div>
+ 				</div>
+			</nav>
+ 		</div>
+
 	<canvas id = "canvasGL"> </canvas>
-	<script type="module" src = Renderer.js ></script>
+	<script type="module" src = Renderer.js ></script>				 
+					 
 </body>
 </html>
