@@ -1,9 +1,12 @@
 import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r132/build/three.module.js';
 import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r132/examples/jsm/controls/OrbitControls.js';
 
+//export let gl;
 function main() {
   const canvas = document.querySelector('#canvasGL');
   const renderer = new THREE.WebGLRenderer({canvas});
+  //gl = canvas.getContext("webgl");
+
 
   const fov = 45;
   const aspect = 2;  // the canvas default

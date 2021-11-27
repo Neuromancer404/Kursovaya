@@ -28,8 +28,6 @@ body {
   color: black;
 }
 
-
-
 /* Добавить цвет для активной/текущей ссылки */
 .editor_topnav a:focus {
   background-color: #2f4f4f;
@@ -42,7 +40,9 @@ body {
 }
 
 canvas {
-  width: 100vw;
-  height: 100vh;
+  width: 99vw;
+  height: 92vh;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
