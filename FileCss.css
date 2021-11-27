@@ -40,3 +40,9 @@ body {
 .editor_topnav_right {
   float: right;
 }
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
