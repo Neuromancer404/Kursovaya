@@ -10,12 +10,15 @@
 <div class="editor">
 	<nav class="editor_topnav">
 		<script src="eventScript.js"></script>
+		<script src="fileHandler.js"></script>
 				<div class="editor_topnav_left">
 					<a href="#home">Редактор</a>				
 					<a href="#import">Импорт</a>
   					<a href="#export">Экспорт</a>
   					<a href="#otprav">Отправить</a>
   					<a href="#clean">Очистить</a>
+					<input type="file" id="file" accept=".obj">
+					<button onclick="readFile(document.getElementById('file'))"></button>
   					<div class="editor_topnav_right">
     					<a href="#contact">Контакты</a>
     					<a href="#about">О Нас</a>
@@ -23,6 +26,7 @@
 			</nav>
  		</div>
 
+	
 	<canvas id = "canvasGL"> </canvas>
 	<script type="module" src = Renderer.js ></script>				 
 					 
