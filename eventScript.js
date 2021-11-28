@@ -1,5 +1,18 @@
 //import {gl} from '/Renderer.js';
 
+window.onload = function(){
+    if (!isWebAssSupporting){
+        console.log("web ass not supporting");
+        window.alert("К сожалению, webassembly не поддерживается вашим браузером. Cкоро мы исправим неработоспособность, а пока полный функционал недоступен.");
+    }
+    else{ 
+        console.log ("your browser supporting webassembly");
+
+    //здесь запуск открытия окна выбора файла
+    drawScene();
+}
+}
+
 function isWebAssSupporting(){
     try {
         if (typeof WebAssembly === "object"){
@@ -25,16 +38,7 @@ function resize(canvas) {
     }
   }
 
-let importButtonClick = function(global) {
-    if (!isWebAssSupporting){
-        console.log("web ass not supporting");
-        window.alert("К сожалению, webassembly не поддерживается вашим браузером. Cкоро мы исправим неработоспособность, а пока полный функционал недоступен.");
-    }
-    else console.log ("your browser supporting webassembly");
 
-    //здесь запуск открытия окна выбора файла
-    drawScene();
-}
 function drawScene() {
     let canvas = document.querySelector("#canvasGL");
     resize(canvas);
