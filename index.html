@@ -2,15 +2,55 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Geetech 3D</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Geetech3D</title>
+	<link rel="stylesheet" type="text/css" href="FileCss.css">
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+<div class="editor">
+	<nav class="editor_topnav">
+		<script src="eventScript.js"></script>
+		<!--<script src="fileHandler.js"></script>-->	
+		<script src = "objLoader.js"></script>
+				<div class="editor_topnav_left">
 
-    <script src = scriptScene.js></script>
+					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 
+					<div class="example-2">
+					  <div class="form-group">
+						<input type="file" name="file" id="file" class="input-file" accept=".obj">
+						<label for="file" class="btn btn-tertiary js-labelFile">
+						  <i class="icon fa fa-check"></i>
+						  <span class="js-fileName">Загрузить файл</span>
+						</label>
+					  </div>
+					 </div>
 
-<canvas id = "canvasGL"> </canvas>
+					<a href="#home">Редактор</a>
+					<!--<select name="" id="">
+						<option value="">Импорт</option>
+						<option value=""></option>
+					</select>-->			
+					<a href="#import">Импорт</a>
+  					<a href="#export">Экспорт</a>
+  					<a href="#otprav">Отправить</a>
+  					<a href="#clean">Очистить</a>
+					<button class="importButton" onclick="readFile(document.getElementById('file'))">Показать</button>
 
+  					<div class="editor_topnav_right">
+    					<a href="#contact">Контакты</a>
+    					<a href="#about">О Нас</a>
+  					</div>
+			</nav>
+ 		<!--</div>
+		 <di class="sideMenu">
+			<li>Импорт файлов</li>
+			
+			 
+		 </di>-->
+	
+	<canvas id = "canvasGL"> </canvas>
+	<script type="module" src = Renderer.js ></script>				 
+			 
 </body>
 </html>
