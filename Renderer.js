@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r132/build/three.module.js';
-import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r132/examples/jsm/controls/OrbitControls.js';
-
-//export let gl;
-function main() {
-  const canvas = document.querySelector('#canvasGL');
-  const renderer = new THREE.WebGLRenderer({canvas});
-  //gl = canvas.getContext("webgl");
-
-
-  const fov = 45;
-=======
 import * as THREE from 'https://threejs.org/build/three.module.js';
 import {OrbitControls} from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
 import {OBJLoader} from 'https://threejs.org/examples/jsm/loaders/OBJLoader.js';
@@ -22,7 +9,6 @@ function main() {
   const renderer = new THREE.WebGLRenderer({canvas});
 
   const fov = 90;
->>>>>>> test
   const aspect = 2;  // the canvas default
   const near = 0.1;
   const far = 100;
@@ -34,9 +20,6 @@ function main() {
   controls.update();
 
   const scene = new THREE.Scene();
-<<<<<<< HEAD
-  scene.background = new THREE.Color(0x8491A3);
-=======
   scene.background = new THREE.Color('black');
 
   {
@@ -84,7 +67,6 @@ function main() {
       scene.add(root);
     });
   }
->>>>>>> test
 
   function resizeRendererToDisplaySize(renderer) {
     const canvas = renderer.domElement;
@@ -113,8 +95,4 @@ function main() {
   requestAnimationFrame(render);
 }
 
-<<<<<<< HEAD
 main();
-=======
-main();
->>>>>>> test

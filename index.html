@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Geetech3D</title>
 	<link rel="stylesheet" type="text/css" href="FileCss.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body>
 <div class="editor">
@@ -19,11 +20,12 @@
 					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 					<div class="example-2">
 					  <div class="form-group">
+						  <form name="uploader" enctype="multipart/form-data" method="POST">
 						<input type="file" name="file" id="file" class="input-file" accept=".obj">
 						<label for="file" class="btn btn-tertiary js-labelFile">
 						  <i class="icon fa fa-check"></i>
 						  <span class="js-fileName">Загрузить файл</span>
-						</label>
+						</label></form>
 					  </div>
 					 </div>
 					<a href="#home">Редактор</a>
@@ -31,8 +33,6 @@
   					<a href="#export">Экспорт</a>
   					<a href="#otprav">Отправить</a>
   					<a href="#clean">Очистить</a>
-					<input type="file" id="file" accept=".obj">
-					<button onclick="readFile(document.getElementById('file'))"></button>
   					<div class="editor_topnav_right">
     					<a href="#contact">Контакты</a>
     					<a href="#about">О Нас</a>

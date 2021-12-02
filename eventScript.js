@@ -44,7 +44,3 @@ function drawScene() {
     resize(canvas);
 
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> test
