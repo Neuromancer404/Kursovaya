@@ -1,5 +1,3 @@
-//import {gl} from '/Renderer.js';
-
 window.onload = function(){
     if (!isWebAssSupporting){
         console.log("web ass not supporting");
@@ -44,3 +42,4 @@ function drawScene() {
     resize(canvas);
 
     }
+
