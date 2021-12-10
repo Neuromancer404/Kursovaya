@@ -3,7 +3,8 @@
 window.onload = function(){
     if (!isWebAssSupporting){
         console.log("web ass not supporting");
-        window.alert("К сожалению, webassembly не поддерживается вашим браузером. Cкоро мы исправим неработоспособность, а пока полный функционал недоступен.");
+        window.alert("К сожалению, webassembly не поддерживается вашим браузером. 
+        Cкоро мы исправим неработоспособность, а пока полный функционал недоступен.");
     }
     else{ 
         console.log ("your browser supporting webassembly");
