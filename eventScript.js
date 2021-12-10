@@ -9,7 +9,6 @@ window.onload = function(){
     else{ 
         console.log ("your browser supporting webassembly");
 
-    //здесь запуск открытия окна выбора файла
     drawScene();
 }
 }
